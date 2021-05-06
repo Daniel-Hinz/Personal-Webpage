@@ -119,15 +119,14 @@
 
 .about-me img {
   border-radius: 50%;
-  width: 75%;
+  width: 100%;
 }
 
 .about-me figcaption {
   margin: auto;
-  width: 150%;
   color: #2b2d36;
   margin-top: 2vh;
-  max-width: 100%;
+  width: 100%;
   font-size: 1rem;
 }
 
