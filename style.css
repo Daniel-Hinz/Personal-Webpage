@@ -112,48 +112,57 @@
 
 .about-me {
   height: 60vh;
-  width: 35rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  width: 600px;
+  position: relative;
+  z-index: -1;
 }
 
 .about-me img {
   border-radius: 50%;
-  width: 18rem;
+  width: 100%;
 }
 
 .about-me figcaption {
   margin: auto;
   color: #2b2d36;
   margin-top: 2vh;
-  max-width: 65%;
+  max-width: 100%;
+}
+
+.center-div {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .skills {
   height: 60vh;
-  width: 35rem;
+  width: 600px;
 }
 
 .skill-box {
   font-size: 2.5vh;
-  height: 3.5vh;
+  height: 4vh;
   font-weight: 100;
   color: #2b2d36;
   margin: 3.5vh 0;
-  width: 75%;
+  width: 85%;
   display: flex;
   background: #f5f5f5;
+  border-radius: 10px;
 }
 
 .skill {
-  padding-top: .20vh;
+  padding-top: .50vh;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
   color: #fff;
   background: #25252e;
   width: 20%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .level {
@@ -161,8 +170,11 @@
   vertical-align: middle;
   display: table-cell;
   width: 80%;
-  padding-top: .20vh;
+  padding-top: .50vh;
+  padding-right: .50vh;
   color: #92A8D1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .eighty {
@@ -175,10 +187,6 @@
 
 .fifty {
   background: linear-gradient(to right, #92A8D1 50%, #f5f5f5 50%);
-}
-
-@media screen and (min-width: 500px; ) {
-
 }
 
 /* projects section */
