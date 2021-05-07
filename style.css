@@ -80,7 +80,7 @@
 .section {
   width: 100%;
   height: 100vh;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
 }
 
 .header {
@@ -91,7 +91,7 @@
   background-size: 6% 4px;
   background-position: center bottom;
   background-repeat: no-repeat;
-  margin-bottom: 6vh;
+  margin-bottom: 10vh;
 }
 
 .header h1 {
@@ -103,23 +103,22 @@
 
 /* about section */
 .about-general {
-  width:100%;
-  margin: auto;
+  width: 100%;
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about-me {
-  height: 60vh;
-  width: 600px;
+  height: 55vh;
+  width: 40%;
   position: relative;
   z-index: -1;
 }
 
 .about-me img {
   border-radius: 50%;
-  width: 100%;
+  width: 65%;
 }
 
 .about-me figcaption {
@@ -131,10 +130,47 @@
 }
 
 .skills {
-  height: 60vh;
-  width: 600px;
+  height: 55vh;
+  width: 40%;
   position: relative;
   z-index: -1;
+  display: table;
+  border-spacing: .5vw 2vh;
+}
+
+.skill-box {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #2b2d36;
+  width: 75%;
+  display: table-row;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.skill {
+  text-align: center;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  background: #25252e;
+  width: 20%;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.level {
+  border-radius: 5px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: .5vw;
+  width: 80%;
+  color: #92A8D1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .center-div {
@@ -142,42 +178,7 @@
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-}
-
-.skill-box {
-  font-size: 2.5vh;
-  height: 4vh;
-  font-weight: 100;
-  color: #2b2d36;
-  margin: 3.5vh 0;
-  width: 85%;
-  display: flex;
-  background: #f5f5f5;
-  border-radius: 10px;
-}
-
-.skill {
-  padding-top: .50vh;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  color: #fff;
-  background: #25252e;
-  width: 20%;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.level {
-  text-align: right;
-  vertical-align: middle;
-  display: table-cell;
-  width: 80%;
-  padding-top: .50vh;
-  padding-right: .50vh;
-  color: #92A8D1;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 75%;
 }
 
 .eighty {
@@ -193,19 +194,21 @@
 }
 
 /* Make About Section Responsive */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1050px) {
   .about-general {
     flex-direction: column;
   }
 
   .about-me {
-    width: 100%;
+    width: 85%;
     height: 35vh;
+    margin: auto;
   }
 
   .skills {
-    width: 100%;
+    width: 85%;
     height: 35vh;
+    margin: auto;
   }
 
   .skill-box {
@@ -229,11 +232,31 @@
   background: #f5f5f5;
 }
 
-.myProjects {
-  border: 1px solid black;
+.slides {
   height: 65vh;
-  width: 75%;
+  width: 60%;
   margin: auto;
+  border-radius: 10px;
+}
+
+.slide-one {
+  height: inherit;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(images/portfolio.JPG);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.slide-head {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.slide-head h3 {
+  color: #fff;
 }
 
 /* contact section */
@@ -277,19 +300,16 @@
   height: 35vh;
   width: 100%;
   text-align: top left;
-  padding-right: 1.5%;
   background: #f5f5f5;
   border: none;
-}
-
-#contact form .message::placeholder {
-  padding-top: 6px;
+  padding-top: 8px;
   padding-left: 6px;
 }
 
 #contact form .button{
+  margin: auto;
   height: 5vh;
-  width: 2;
+  width: 10vw;
 }
 
 /* footer section */
