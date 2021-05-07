@@ -6,6 +6,16 @@
   scroll-behavior: smooth;
 }
 
+.image-link {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+}
+
 /* Main page */
 #intro {
   display: flex;
@@ -61,6 +71,7 @@
   padding-left: 5%;
   position: sticky;
   top:0;
+  z-index: 999;
 }
 
 .item {
@@ -135,7 +146,7 @@
   position: relative;
   z-index: -1;
   display: table;
-  border-spacing: .5vw 2vh;
+  border-spacing: 0 2vh;
 }
 
 .skill-box {
@@ -145,7 +156,6 @@
   width: 75%;
   display: table-row;
   background: #f5f5f5;
-  border-radius: 10px;
 }
 
 .skill {
@@ -156,13 +166,11 @@
   color: #fff;
   background: #25252e;
   width: 20%;
-  border-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .level {
-  border-radius: 5px;
   text-align: right;
   display: table-cell;
   vertical-align: middle;
@@ -193,70 +201,75 @@
   background: linear-gradient(to right, #92A8D1 50%, #f5f5f5 50%);
 }
 
-/* Make About Section Responsive */
-@media screen and (max-width: 1050px) {
-  .about-general {
-    flex-direction: column;
-  }
-
-  .about-me {
-    width: 85%;
-    height: 35vh;
-    margin: auto;
-  }
-
-  .skills {
-    width: 85%;
-    height: 35vh;
-    margin: auto;
-  }
-
-  .skill-box {
-    margin: auto;
-    height: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .skill {
-    padding-top: none;
-    font-size: .65rem;
-  }
-
-  .level {
-    font-size: .65rem;
-  }
-}
-
 /* projects section */
 #projects {
   background: #f5f5f5;
 }
 
-.slides {
-  height: 65vh;
-  width: 60%;
+
+.projects-general {
+  width: 85%;
+  height: 60vh;
   margin: auto;
-  border-radius: 10px;
+  display: table;
 }
 
-.slide-one {
-  height: inherit;
+.projects-row {
+  display: table-row;
+  height: 30vh;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(images/portfolio.JPG);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+}
+
+.project-one {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
+  background: url(images/webpage.jpg);
   background-size: cover;
-  border-radius: 10px;
 }
 
-.slide-head {
-  width: 100%;
-  border: 1px solid black;
+.project-two {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
+  background: url(images/college-finder.jpg);
+  background-size: cover;
 }
 
-.slide-head h3 {
-  color: #fff;
+.project-three {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
+  background: url(images/pong.jpg);
+  background-size: cover;
+}
+
+.project-four {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
+  background: url(images/drone-delivery.jpg);
+  background-size: cover;
+}
+
+.project-five {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
+  background: url(images/kent-greek-life.png) #fff;
+  background-size: cover;
+}
+
+.project-six {
+  position: relative;
+  display: table-cell;
+  width: 33.333%;
+  height: 30vh;
 }
 
 /* contact section */
@@ -354,10 +367,52 @@
 }
 
 .trademark p {
-  margin-top: 2%;
+  margin-top: 3vh;
   color: #f5f5f5;
 }
 
 .trademark p span {
   color: #92A8D1;
+}
+
+/* Make About Section Responsive */
+@media screen and (max-width: 1050px) {
+  .about-general {
+    flex-direction: column;
+  }
+
+  .about-me {
+    width: 85%;
+    height: 35vh;
+    margin: auto;
+  }
+
+  .skills {
+    width: 85%;
+    height: 35vh;
+    margin: auto;
+  }
+
+  .skill-box {
+    margin: auto;
+    height: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .skill {
+    padding-top: none;
+    font-size: .65rem;
+  }
+
+  .level {
+    font-size: .65rem;
+  }
+
+  #contact form {
+    width: 300px;
+  }
+
+  #contact form .button {
+    width: 100px;
+  }
 }
