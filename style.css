@@ -129,19 +129,19 @@
 
 .about-me img {
   border-radius: 50%;
-  width: 65%;
+  width: 22rem;
 }
 
 .about-me figcaption {
   margin: auto;
   color: #2b2d36;
   margin-top: 2vh;
-  width: 100%;
+  width: 75%;
   font-size: 1rem;
 }
 
 .skills {
-  height: 55vh;
+  height: 70vh;
   width: 40%;
   position: relative;
   z-index: -1;
@@ -152,9 +152,10 @@
 .skill-box {
   font-size: 1rem;
   font-weight: 100;
+  height: 1rem;
   color: #2b2d36;
-  width: 75%;
   display: table-row;
+  width: 100%;
   background: #f5f5f5;
 }
 
@@ -186,7 +187,7 @@
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  width: 75%;
+  width: 100%;
 }
 
 .eighty {
@@ -204,6 +205,7 @@
 /* projects section */
 #projects {
   background: #f5f5f5;
+  height: 95vh;
 }
 
 .projects-general {
@@ -251,9 +253,41 @@
 
 }
 
+/* Page Break */
+.break {
+    height: 7rem;
+    display: flex;
+    background: #f5f5f5;
+}
+
+.left-angle {
+  width: 50%;
+  background: #2b2d36;
+  clip-path: polygon(0 0, 0 100%, calc(100%) 100%, 0 0);
+}
+
+.right-angle {
+  width: 50%;
+  background: #2b2d36;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 /* contact section */
 #contact {
   height: 95vh;
+  background: #2b2d36;
+}
+
+#contact .header {
+  background-image: linear-gradient(#fff,#fff);
+  background-size: 65px 4px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 7vh;
+}
+
+#contact h1 {
+   color: #fff;
 }
 
 #contact .header-two {
@@ -264,7 +298,7 @@
 #contact h2 {
   display: table-cell;
   text-align: center;
-  color: #2b2d36;
+  color: #fff;
   height: 10vh;
 }
 
@@ -286,9 +320,11 @@
 
 #contact form .first {
   height: 5vh;
+  border-radius: 5px;
 }
 
 #contact form .message {
+  border-radius: 5px;
   height: 35vh;
   width: 100%;
   text-align: top left;
@@ -302,13 +338,14 @@
   margin: auto;
   height: 5vh;
   width: 10vw;
+  border-radius: 5px;
 }
 
 /* footer section */
 .footer {
   width: 100%;
   height: 35vh;
-  background: #2b2d36;
+  background: #25252e;
 }
 
 .all-socials {
@@ -367,7 +404,7 @@
   }
 
   .about-me img {
-    width: 75%;
+    width: 10rem;
   }
 
   .skills {
