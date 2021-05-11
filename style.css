@@ -225,7 +225,6 @@ hr {
 
 .center {
   position: absolute;
-  width: 100%;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -322,11 +321,10 @@ hr {
 }
 
 .center-div {
+  width: 100%;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
-  text-align: center;
-  width: 100%;
 }
 
 .eighty {
@@ -554,7 +552,7 @@ hr {
 /* Make About Section Responsive */
 @media screen and (max-width: 1050px) {
   #about {
-    height: 135vh;
+    height: 140vh;
   }
 
   .about-general {
@@ -562,7 +560,7 @@ hr {
   }
 
   .certifications {
-    height: 32vh;
+    height: 35vh;
     width: 95%;
   }
 
@@ -593,6 +591,7 @@ hr {
     width: 85%;
     height: 35vh;
     margin: auto;
+    margin-top: 5vh;
   }
 
   .hex-outer {

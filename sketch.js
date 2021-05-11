@@ -48,6 +48,14 @@ function setup() {
 }
 
 function draw() {
+  var myWidth = document.getElementById('intro').clientWidth;
+  var myHeight = document.getElementById('intro').clientHeight;
+
+  var myCanvas = createCanvas(myWidth, myHeight);
+  myCanvas.parent("intro");
+  myCanvas.style('z-index', '-1');
+  myCanvas.position(0,0);
+  stroke(255, 255, 255, 75);
   background(43, 45, 54);
 
   for (let i = 0; i < dots.length; ++i) {
