@@ -9,7 +9,7 @@
   position:absolute;
   width:100%;
   height:100%;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 1;
 }
@@ -71,7 +71,9 @@ hr {
 #navbar {
   background: #25252e;
   height: 6vh;
+  height: calc(var(--vh, 1vh) * 6);
   padding-top: 2.5vh;
+  padding-top: calc(var(--vh, 1vh) * 2.5);
   width: 95%;
   padding-left: 5%;
   position: sticky;
@@ -96,11 +98,14 @@ hr {
 .section {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   padding-bottom: 3vh;
+  padding-bottom: calc(var(--vh, 1vh) * 3)
 }
 
 .header {
   padding: 12vh 0 2vh 0;
+  padding: calc(var(--vh, 1vh) * 12) 0 calc(var(--vh, 1vh) * 2) 0;
   display: table;
   width: 100%;
   background-image: linear-gradient(#2b2d36,#2b2d36);
@@ -108,6 +113,7 @@ hr {
   background-position: center bottom;
   background-repeat: no-repeat;
   margin-bottom: 7vh;
+  margin-bottom: calc(var(--vh, 1vh) * 7);
 }
 
 .header h1 {
@@ -119,11 +125,13 @@ hr {
 
 /* about section */
 #about {
-  height: 160vh;
+  height: 165vh;
+  height: calc(var(--vh, 1vh) * 165);
 }
 
 .certifications {
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   width: 75%;
   margin: auto;
   display: flex;
@@ -133,6 +141,7 @@ hr {
 .certification {
   width: 33.333%;
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   text-align: center;
 }
 
@@ -159,6 +168,11 @@ hr {
   width: 11rem;
   background: #25252e;
   margin: auto;
+}
+
+.big {
+  height: 20rem;
+  width: 20rem;
 }
 
 .hexagon:before, .double:after {
@@ -203,6 +217,12 @@ hr {
   content:"\f0c0";
 }
 
+.pic:after {
+  background-image: url(images/IMG_0058.PNG);
+  background-position: center;
+  background-size: 105%;
+}
+
 .about-general {
   width: 100%;
   margin-top: 2rem;
@@ -212,67 +232,14 @@ hr {
 }
 
 .about-me {
-  height: 70vh;
+  height: inherit;
   width: 40%;
   position: relative;
   z-index: -1;
 }
 
-.about-me {
-  position: relative;
-  height: 70vh;
-  width: 40%;
-}
-
-.center {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hex-outer {
-  height: 20rem;
-  width: 40rem;
-  background: red;
-  transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  overflow: hidden;
-  visibility: hidden;
-  margin: auto;
-}
-
-.hex-inner {
-  height: 100%;
-  width: 100%;
-  background: green;
-  transform: rotate(-60deg);
-  transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  overflow: hidden;
-}
-
-.hex-image {
-  height: 100%;
-  width: 100%;
-  background-image: url(images/IMG_0058.PNG);
-  background-position: center;
-  background-size: 50% 100%;
-  transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  visibility: visible;
-}
-
 .caption {
-  width: 65%;
+  width: 90%;
   font-size: 1rem;
   margin: 2rem auto;
   text-align: center;
@@ -281,11 +248,13 @@ hr {
 
 .skills {
   height: 70vh;
+  height: calc(var(--vh, 1vh) * 70);
   width: 40%;
   position: relative;
   z-index: -1;
   display: table;
   border-spacing: 0 2vh;
+  border-spacing: 0 calc(var(--vh, 1vh) * 2);
 }
 
 .skill-box {
@@ -344,11 +313,13 @@ hr {
 #projects {
   background: #f5f5f5;
   height: 95vh;
+  height: calc(var(--vh, 1vh) * 95);
 }
 
 .projects-general {
   width: 85%;
   height: 60vh;
+  height: calc(var(--vh, 1vh) * 60);
   margin: auto;
 }
 
@@ -361,6 +332,7 @@ hr {
   float: left;
   width: 33.33%;
   height: 30vh;
+  height: calc(var(--vh, 1vh) * 30);
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
@@ -413,6 +385,7 @@ hr {
 /* contact section */
 #contact {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: #2b2d36;
 }
 
@@ -422,6 +395,7 @@ hr {
   background-position: center bottom;
   background-repeat: no-repeat;
   margin-bottom: 7vh;
+  margin-bottom: calc(var(--vh, 1vh) * 7);
 }
 
 #contact h1 {
@@ -438,11 +412,13 @@ hr {
   text-align: center;
   color: #fff;
   height: 10vh;
+  height: calc(var(--vh, 1vh) * 10);
 }
 
 #contact form {
   width: 40%;
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   text-align: center;
   margin: auto;
 }
@@ -451,6 +427,7 @@ hr {
   width: 100%;
   margin: auto;
   margin-bottom: 1vh;
+  margin-bottom: calc(var(--vh, 1vh) * 1);
   padding-left: 5px;
   border: none;
   background: #f5f5f5;
@@ -458,12 +435,14 @@ hr {
 
 #contact form .first {
   height: 5vh;
+  height: calc(var(--vh, 1vh) * 5);
   border-radius: 5px;
 }
 
 #contact form .message {
   border-radius: 5px;
   height: 35vh;
+  height: calc(var(--vh, 1vh) * 35);
   width: 100%;
   text-align: top left;
   background: #f5f5f5;
@@ -480,12 +459,13 @@ hr {
   background: #f5f5f5;
   border: 3px solid #fff;
   color: #444;
-  }
+}
 
 /* footer section */
 .footer {
   width: 100%;
   height: 35vh;
+  height: calc(var(--vh, 1vh) * 35);
   background: #25252e;
   position: relative;
 }
@@ -509,6 +489,7 @@ hr {
 
 .all-socials {
   padding-top: 12vh;
+  padding-top: calc(var(--vh, 1vh) * 12);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -543,6 +524,7 @@ hr {
 
 .trademark p {
   margin-top: 3vh;
+  margin-top: calc(var(--vh, 1vh) * 3);
   color: #f5f5f5;
 }
 
@@ -550,83 +532,58 @@ hr {
   color: #92A8D1;
 }
 
-/* Make About Section Responsive */
-@media screen and (max-width: 1050px) {
+/* Make Responsive for tablets*/
+@media screen and (max-width: 1200px) {
+  .certifications {
+    height: 27.5vh;
+    height: calc(var(--vh, 1vh) * 27.5);
+  }
+
   #about {
-    height: 140vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .about-me {
+    margin-top: 2vh;
+    margin-top: calc(var(--vh, 1vh) * 2);
+  }
+
+  .skills {
+    height: 35vh;
+    height: calc(var(--vh, 1vh) * 35);
+  }
+}
+
+/* Make Responsive for phones*/
+@media screen and (max-width: 800px) {
+  #about {
+    height: 150vh;
+    height: calc(var(--vh, 1vh) * 150);
+
+  }
+
+  .certifications {
+    height: 40vh;
+    height: calc(var(--vh, 1vh) * 40);
   }
 
   .about-general {
     flex-direction: column;
   }
 
-  .certifications {
-    height: 35vh;
-    width: 95%;
-  }
-
-  .double:after {
-    line-height: 3.75rem;
-    font-size: 2rem;
-  }
-
-  .about-certification h2 {
-    font-size: 1rem;
-  }
-
-  .about-certification p {
-    font-size: .75rem;
-  }
-
-  .hexagon {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .hexagon:before {
-    font-size: 3rem;
-    line-height: 4.25rem;
-  }
-
   .about-me {
-    width: 85%;
-    height: 35vh;
-    margin: auto;
-    margin-top: 5vh;
-  }
-
-  .hex-outer {
-    width: 20rem;
-    height: 10rem;
-  }
-
-  .caption {
-    font-size: .75rem:
+    width: 100%;
   }
 
   .skills {
-    width: 85%;
-    height: 35vh;
+    width: 80%;
     margin: auto;
-  }
-
-  .skill-box {
-    margin: auto;
-    height: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .skill {
-    padding-top: none;
-    font-size: .65rem;
-  }
-
-  .level {
-    font-size: .65rem;
   }
 
   #projects {
-    height: 75vh;
+    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
   }
 
   .projects-general {
@@ -635,14 +592,79 @@ hr {
 
   .projects li {
     height: 15vh;
+    height: calc(var(--vh, 1vh) * 15);
     width: 50%;
+
   }
 
   #contact form {
-    width: 250px;
+    width: 75%;
   }
 
-  #contact form .button {
-    width: 100px;
+  #contact form .button{
+    width: 25vw;
+  }
+
+}
+
+/* Make Responsive for standard phone*/
+@media screen and (max-width: 600px) {
+  #about {
+    height: 160vh;
+    height: calc(var(--vh, 1vh) * 160);
+  }
+
+  .certifications {
+    width: 95%;
+  }
+
+  .hexagon {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .double:after {
+    top: 10px;
+    left: 10px;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    background: #25252e;
+    color: #92A8D1;
+    line-height: 4.5rem;
+    font-size: 3rem;
+    font-family: FontAwesome;
+  }
+
+  .big {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .pic:after {
+    background-image: url(images/IMG_0058.PNG);
+    background-position: center;
+    background-size: 105%;
+  }
+}
+
+
+/* Make Responsive for small phone*/
+@media screen and (max-width: 450px) {
+  #about {
+    height: 175vh;
+    height: calc(var(--vh, 1vh) * 175);
+  }
+
+  .certifications {
+    height: 42.5vh;
+    height: calc(var(--vh, 1vh) * 42.5);
+  }
+
+  .about-certification h2{
+    font-size: 1rem;
+  }
+
+  .about-certification p {
+    font-size: .75rem;
   }
 }
