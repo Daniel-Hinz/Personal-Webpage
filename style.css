@@ -78,7 +78,7 @@ hr {
   padding-left: 5%;
   position: sticky;
   top:0;
-  z-index: 999;
+  z-index: 900;
 }
 
 .item {
@@ -219,8 +219,8 @@ hr {
 
 .pic:after {
   background-image: url(images/IMG_0058.PNG);
-  background-position: center;
-  background-size: 105%;
+  background-position: cover;
+  background-size: 100%;
 }
 
 .about-general {
@@ -239,7 +239,7 @@ hr {
 }
 
 .caption {
-  width: 90%;
+  width: 80%;
   font-size: 1rem;
   margin: 2rem auto;
   text-align: center;
@@ -330,37 +330,86 @@ hr {
 
 .projects li {
   float: left;
-  width: 33.33%;
-  height: 30vh;
+  width: 30%;
+  height: 15vh;
   height: calc(var(--vh, 1vh) * 30);
   position: relative;
-  background-size: cover;
-  background-position: 50% 50%;
   box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+  margin: 1%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project-one {
-  background: url(images/webpage.jpg);
+.projects li i {
+  height: 150px;
+  width: 150px;
+  font-size: 5rem;
+  border-radius: 50%;
+  line-height: 9.25rem;
+  background: #2b2d36;
+  color: #fff;
 }
 
-.project-two {
-  background: url(images/college-finder.JPG);
+.fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 1.5rem;
+  color: #25252e;
 }
 
-.project-three {
-  background: url(images/drone-delivery.jpg);
+.project-display {
+  display: none;
+  background: #f5f5f5;
+  z-index: 900;
+  width: 65%;
+  height: 85vh;
+  height: calc(var(--vh, 1vh) * 85);
+  border: 1px solid black;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.project-four {
-  background: url(images/kent-greek-life.png) #fff;
+.project-header{
+  padding: 0.75rem 0 .5rem 1rem;
+  width: 100%;
+  color: #25252e;
+  font-size: 2rem;
 }
 
-.project-five {
-  background: url(images/pong.JPG);
+.project-display img {
+  width: 100%;
 }
 
-.project-six {
+.project-description {
+  font-size: 1rem;
+  width: 75%;
+  padding-left: 1rem;
+}
 
+.project-one-display {
+  z-index: 901;
+}
+
+.project-two-display {
+  z-index: 901;
+}
+
+.project-three-display {
+  z-index: 901;
+}
+
+.project-four-display {
+  z-index: 901;
+}
+
+.project-five-display {
+  z-index: 901;
 }
 
 /* Page Break */
@@ -593,8 +642,14 @@ hr {
   .projects li {
     height: 15vh;
     height: calc(var(--vh, 1vh) * 15);
-    width: 50%;
+    width: 48%;
+  }
 
+  .projects li i {
+    font-size: 3rem;
+    height: 90px;
+    width: 90px;
+    line-height: 5.5rem;
   }
 
   #contact form {
