@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-hr {
+.break {
   width: 80%;
   margin: auto;
   color: #f5f5f5;
@@ -97,10 +97,8 @@ hr {
 /* General styles for each section */
 .section {
   width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   padding-bottom: 3vh;
-  padding-bottom: calc(var(--vh, 1vh) * 3)
+  padding-bottom: calc(var(--vh, 1vh) * 3);
 }
 
 .header {
@@ -124,14 +122,7 @@ hr {
 }
 
 /* about section */
-#about {
-  height: 165vh;
-  height: calc(var(--vh, 1vh) * 165);
-}
-
 .certifications {
-  height: 50vh;
-  height: calc(var(--vh, 1vh) * 50);
   width: 75%;
   margin: auto;
   display: flex;
@@ -140,8 +131,6 @@ hr {
 
 .certification {
   width: 33.333%;
-  height: 50vh;
-  height: calc(var(--vh, 1vh) * 50);
   text-align: center;
 }
 
@@ -152,12 +141,12 @@ hr {
 }
 
 .about-certification h2 {
-  padding-top: .5rem;
-  height: 2rem;
+  padding: .25rem 0;
   color: #2b2d36;
 }
 
 .about-certification p {
+  padding-bottom: 1.5rem;
   color: #2b2d36;
   font-size: 1rem;
 }
@@ -232,7 +221,6 @@ hr {
 }
 
 .about-me {
-  height: inherit;
   width: 40%;
   position: relative;
   z-index: -1;
@@ -330,8 +318,8 @@ hr {
 
 .projects li {
   float: left;
-  width: 30%;
-  height: 15vh;
+  width: 31.25%;
+  height: 30vh;
   height: calc(var(--vh, 1vh) * 30);
   position: relative;
   box-sizing: border-box;
@@ -351,7 +339,7 @@ hr {
   border-radius: 50%;
   line-height: 9.25rem;
   background: #2b2d36;
-  color: #fff;
+  color: #92A8D1;
 }
 
 .fa-times {
@@ -362,13 +350,17 @@ hr {
   color: #25252e;
 }
 
+.break-project {
+  width: 50%;
+  position: absolute;
+  left: 1rem;
+}
+
 .project-display {
   display: none;
   background: #f5f5f5;
   z-index: 900;
   width: 65%;
-  height: 85vh;
-  height: calc(var(--vh, 1vh) * 85);
   border: 1px solid black;
   position: fixed;
   top: 50%; left: 50%;
@@ -383,13 +375,14 @@ hr {
 }
 
 .project-display img {
+  max-height: 70%;
   width: 100%;
 }
 
 .project-description {
   font-size: 1rem;
   width: 75%;
-  padding-left: 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
 .project-one-display {
@@ -413,7 +406,7 @@ hr {
 }
 
 /* Page Break */
-.break {
+.page-break {
     height: 7rem;
     display: flex;
     background: #f5f5f5;
@@ -583,16 +576,6 @@ hr {
 
 /* Make Responsive for tablets*/
 @media screen and (max-width: 1200px) {
-  .certifications {
-    height: 27.5vh;
-    height: calc(var(--vh, 1vh) * 27.5);
-  }
-
-  #about {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
-
   .about-me {
     margin-top: 2vh;
     margin-top: calc(var(--vh, 1vh) * 2);
@@ -606,17 +589,6 @@ hr {
 
 /* Make Responsive for phones*/
 @media screen and (max-width: 800px) {
-  #about {
-    height: 150vh;
-    height: calc(var(--vh, 1vh) * 150);
-
-  }
-
-  .certifications {
-    height: 40vh;
-    height: calc(var(--vh, 1vh) * 40);
-  }
-
   .about-general {
     flex-direction: column;
   }
@@ -652,6 +624,10 @@ hr {
     line-height: 5.5rem;
   }
 
+  .project-display {
+    width: 90%;
+  }
+
   #contact form {
     width: 75%;
   }
@@ -664,13 +640,16 @@ hr {
 
 /* Make Responsive for standard phone*/
 @media screen and (max-width: 600px) {
-  #about {
-    height: 160vh;
-    height: calc(var(--vh, 1vh) * 160);
-  }
-
   .certifications {
     width: 95%;
+  }
+
+  .about-certification h2{
+    font-size: 1rem;
+  }
+
+  .about-certification p {
+    font-size: .75rem;
   }
 
   .hexagon {
@@ -704,22 +683,20 @@ hr {
 
 
 /* Make Responsive for small phone*/
-@media screen and (max-width: 450px) {
-  #about {
-    height: 175vh;
-    height: calc(var(--vh, 1vh) * 175);
-  }
-
-  .certifications {
-    height: 42.5vh;
-    height: calc(var(--vh, 1vh) * 42.5);
-  }
-
-  .about-certification h2{
-    font-size: 1rem;
-  }
-
-  .about-certification p {
+@media screen and (max-width: 375px) {
+  #navbar .item {
     font-size: .75rem;
+  }
+
+  #about {
+    margin-bottom: 5vh;
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+  }
+}
+
+/* Make Responsive for small phone*/
+@media screen and (max-width: 300px) {
+  #navbar .item {
+    font-size: .55rem;
   }
 }
