@@ -354,10 +354,13 @@
 
 .fa-times {
   position: absolute;
-  top: 1rem;
+  text-align: center;
+  padding: .15rem .35rem;
+  bottom: 1rem;
   right: 1.25rem;
   font-size: 1.5rem;
   color: #25252e;
+
 }
 
 .break-project {
