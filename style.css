@@ -122,6 +122,10 @@
 }
 
 /* about section */
+#about {
+  overflow: hidden;
+}
+
 .certifications {
   width: 75%;
   margin: auto;
@@ -235,8 +239,6 @@
 }
 
 .skills {
-  height: 70vh;
-  height: calc(var(--vh, 1vh) * 70);
   width: 40%;
   position: relative;
   z-index: -1;
@@ -379,7 +381,7 @@
   transform: translate(-50%, -50%);
 }
 
-.project-header{
+.project-header {
   padding: 0.75rem 0 .5rem 1rem;
   width: 100%;
   color: #25252e;
@@ -395,25 +397,6 @@
   font-size: 1rem;
   width: 75%;
   padding: 1rem 0 1rem 1rem;
-}
-
-.project-one-display {
-  z-index: 901;
-}
-
-.project-two-display {
-  z-index: 901;
-}
-
-.project-three-display {
-  z-index: 901;
-}
-
-.project-four-display {
-  z-index: 901;
-}
-
-.project-five-display {
   z-index: 901;
 }
 
@@ -593,14 +576,21 @@
     margin-top: calc(var(--vh, 1vh) * 2);
   }
 
-  .skills {
+  .p-icon {
     height: 35vh;
     height: calc(var(--vh, 1vh) * 35);
+  }
+
+  .projects ul li i {
+    font-size: 3rem;
+    line-height: 2;
+    height: 100px;
+    width: 100px;
   }
 }
 
 /* Make Responsive for phones*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .about-general {
     flex-direction: column;
   }
@@ -694,11 +684,6 @@
 
 /* Make Responsive for small phone*/
 @media screen and (max-width: 375px) {
-  #projects {
-    height: 95vh;
-    height: calc(var(--vh, 1vh) * 95);
-  }
-
   .projects .p-full .p-icon a i {
     font-size: 2.5rem;
     height: 75px;
@@ -708,11 +693,6 @@
 
   #navbar .item {
     font-size: .75rem;
-  }
-
-  #about {
-    margin-bottom: 5vh;
-    margin-bottom: calc(var(--vh, 1vh) * 5);
   }
 }
 
