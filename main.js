@@ -8,22 +8,20 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 window.addEventListener('resize', () => {
-	window.resizeTo(window.innerWidth, vh * 100);
+	window.resizeTo(window.innerHeight, vh * 100);
 });
 
 // for skills table
 $(document).ready(function() {
-  $(window).on('load resize', function() {
-    var $thisnav = $('.active').offset().left;
+  var $thisnav = $('.active').offset().left;
 
-    $('.tab-header').hover(function() {
-      var $left = $(this).offset().left - $thisnav;
-      var $width = $(this).outerWidth();
-      $('.wee').css({ 'left': $left, 'width': $width * 0.5});
-    }, function() {
-      var $initwidth = $('.active').width();
-      $('.wee').css({ 'left': $left, 'width': $initwidth });
-    });
+  $('.tab-header').hover(function() {
+    var $left = $(this).offset().left - $thisnav;
+    var $width = $(this).outerWidth();
+    $('.wee').css({ 'left': $left, 'width': $width * 0.5});
+  }, function() {
+    var $initwidth = $('.active').width();
+    $('.wee').css({ 'left': $left, 'width': $initwidth });
   });
 });
 
@@ -62,25 +60,22 @@ $(".fa-times").click(function(){
 	$(".project-display").css('display', 'none');});
 
 // project management
-$(".fa-times").click(function(){
-	$(".project-display").css('display', 'none');});
-
-$(".project-one").click(function(){
+$(".one").click(function(){
   $(".project-one-display").css('display', 'block');
 });
 
-$(".project-two").click(function(){
+$(".two").click(function(){
   $(".project-two-display").css('display', 'block');
 });
 
-$(".project-three").click(function(){
+$(".three").click(function(){
   $(".project-three-display").css('display', 'block');
 });
 
-$(".project-four").click(function(){
+$(".four").click(function(){
   $(".project-four-display").css('display', 'block');
 });
 
-$(".project-five").click(function(){
+$(".five").click(function(){
   $(".project-five-display").css('display', 'block');
 });

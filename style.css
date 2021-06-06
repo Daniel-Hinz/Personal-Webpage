@@ -7,12 +7,8 @@
 }
 
 .image-link {
-  position:absolute;
   width:100%;
   height:100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .break {
@@ -50,25 +46,24 @@
 
 /* button */
 .wrapper a{
-  display: block;
-  width: 250px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 14rem;
+  height: 3.25rem;
   font-size: 1rem;
-  line-height: 50px;
-  font-weight: bold;
   text-decoration: none;
-  text-align: center;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 1px;
   transition: all .5s;
   border: 2px solid #fff;
-  margin: auto;
   margin-top: 1.5rem;
 }
 
 .wrapper a:hover{
-  width: 200px;
+  width: 11rem;
+  height: 3rem;
   border: 3px solid #92A8D1;
   color: #92A8D1;
 }
@@ -76,7 +71,8 @@
 /* Navbar */
 #navbar {
   background: #25252e;
-  width: 100%;
+  width: 95%;
+  padding-left: 5%;
   z-index: 900;
   position: sticky;
   top: 0;
@@ -92,7 +88,7 @@
   display: block;
   float: left;
   width: 10%;
-  margin: 1.15rem 0;
+  margin: 1rem 0;
 }
 
 .item:hover {
@@ -102,8 +98,7 @@
 /* General styles for each section */
 .section {
   width: 100%;
-  padding-bottom: 3vh;
-  padding-bottom: calc(var(--vh, 1vh) * 3);
+  padding-bottom: 5rem;
 }
 
 .header {
@@ -350,7 +345,7 @@
 }
 
 .projects-general {
-  width: 85%;
+  width: 67.5vw;
   margin: auto;
 }
 
@@ -360,42 +355,16 @@
   overflow: hidden;
 }
 
-.p-full {
-  width: 31.25%;
+.project {
+  width: 22.5vw;
+  height: 22.5vw;
   list-style: none;
   float: left;
-  margin: 0.75%;
 }
 
-.p-icon {
+.project img {
   width: 100%;
-  height: 30vh;
-  height: calc(var(--vh, 1vh) * 30);
-  position: relative;
-  box-sizing: border-box;
-  text-align: center;
-  background: #fff;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-title {
-  width: 100%;
-  padding: 7.5px 0;
-  text-align: center;
-  color: #25252e;
-}
-
-.projects ul li i {
-  height: 150px;
-  width: 150px;
-  font-size: 5rem;
-  border-radius: 50%;
-  line-height: 9.25rem;
-  background: #2b2d36;
-  color: #92A8D1;
+  background-size: cover;
 }
 
 .fa-times {
@@ -406,7 +375,6 @@
   right: 1.25rem;
   font-size: 1.5rem;
   color: #25252e;
-
 }
 
 .break-project {
@@ -455,8 +423,8 @@
 .angle {
   width: 100%;
   background: #f5f5f5;
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, -5% -5%, 105% -5%);
+  -webkit-clip-path: polygon(50% 100%, -5% -5%, 105% -5%);
 }
 
 /* contact section */
@@ -503,8 +471,6 @@
 #contact form input {
   width: 100%;
   margin: auto;
-  margin-bottom: 1vh;
-  margin-bottom: calc(var(--vh, 1vh) * 1);
   padding-left: 5px;
   border: none;
   background: #f5f5f5;
@@ -514,6 +480,7 @@
   height: 5vh;
   height: calc(var(--vh, 1vh) * 5);
   border-radius: 5px;
+  margin: .2rem 0;
 }
 
 #contact form .message {
@@ -558,6 +525,15 @@
   transform: translateX(-50%);
 }
 
+.reset a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
 .reset i {
   position: absolute;
   color: #92A8D1;
@@ -576,7 +552,7 @@
   width: 4.25rem;
   height: 4.25rem;
   background: #f5f5f5;
-  margin: 0 3%;
+  margin: 0 2%;
   text-align: center;
   border-radius: 50%;
 }
@@ -629,18 +605,6 @@
     width: 80%;
     margin: auto;
   }
-
-  .p-icon {
-    height: 35vh;
-    height: calc(var(--vh, 1vh) * 35);
-  }
-
-  .projects ul li i {
-    font-size: 2.75rem;
-    line-height: 2;
-    height: 100px;
-    width: 100px;
-  }
 }
 
 /* Make Responsive for phones*/
@@ -658,24 +622,17 @@
     width: 100%;
   }
 
-  .p-full {
-    width: 48%;
-  }
-
-  .projects .p-full .p-icon {
-    height: 15vh;
-    height: calc(var(--vh, 1vh) * 15);
-  }
-
-  .projects .p-full .p-icon a i {
-    font-size: 3rem;
-    height: 90px;
-    width: 90px;
-    line-height: 5.5rem;
+  .project {
+    width: 50vw;
+    height: 50vw;
   }
 
   .project-display {
     width: 90%;
+  }
+
+  .five {
+    transform: translateX(50%);
   }
 
   #contact form {
@@ -746,15 +703,5 @@
   .level {
     width: 75%;
   }
-}
 
-
-/* Make Responsive for small phone*/
-@media screen and (max-width: 375px) {
-  .projects .p-full .p-icon a i {
-    font-size: 2.5rem;
-    height: 75px;
-    width: 75px;
-    line-height: 4.5rem;
-  }
 }
