@@ -9,11 +9,12 @@ class Dot {
     this.lineY = random(this.y);
     this.xSpeed = random(-0.35, 0.35);
     this.ySpeed = random(-0.35, 0,35);
+    this.size = random(3,10);
   }
 
   show() {
     stroke(146, 168, 209);
-    strokeWeight(5);
+    strokeWeight(this.size);
     point(this.x, this.y);
 
     strokeWeight(1);
@@ -34,7 +35,7 @@ class Dot {
 }
 
 function setup() {
-  for (let i = 0; i < 25; ++i) {
+  for (let i = 0; i < 35; ++i) {
     dot = new Dot();
     dots.push(dot);
   }

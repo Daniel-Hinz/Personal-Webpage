@@ -17,8 +17,8 @@ $(document).ready(function() {
 
   $('.tab-header').hover(function() {
     var $left = $(this).offset().left - $thisnav;
-    var $width = $(this).outerWidth();
-    $('.wee').css({ 'left': $left, 'width': $width * 0.5});
+    var $width = $(this).outerWidth() * 0.5;
+    $('.wee').css({ 'left': $left, 'width': $width});
   }, function() {
     var $initwidth = $('.active').width();
     $('.wee').css({ 'left': $left, 'width': $initwidth });
