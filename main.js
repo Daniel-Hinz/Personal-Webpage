@@ -1,6 +1,6 @@
 // smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1500
+	speed: 1000
 });
 
 // prevent vertical mobile browser resize
