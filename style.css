@@ -390,7 +390,7 @@
 
 .project:hover img {
   transition: .4s;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .project img {
@@ -445,6 +445,19 @@
   padding: 1rem 1.5rem;
   z-index: 901;
   color: #2b2d36;
+}
+
+.visit-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.5rem;
+  margin: .5rem 1rem 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #2b2d36;
 }
 
 /* Page Break */
@@ -751,6 +764,11 @@
 
   .level {
     width: 75%;
+  }
+
+  .visit-site {
+    width: 7.5rem;
+    height: 2rem;
   }
 
 }
