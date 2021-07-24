@@ -25,10 +25,16 @@
     </div>
 
     <nav id="navbar">
-      <a href="#" class="item">Home</a>
-      <a href="#about" class="item">About</a>
-      <a href="#projects" class="item">Projects</a>
-      <a href="#contact" class="item">Contact</a>
+      <h2>Daniel Hinz</h2>
+      <div id="links">
+        <a href="#" class="first item">Home</a>
+        <a href="#about" class="item">About</a>
+        <a href="#Projects" class="item">Projects</a>
+        <a href="#contact" class="item">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
     </nav>
 
     <div id="about" class="section">
@@ -71,8 +77,8 @@
         <div class="about-skills">
           <ul class="about-skills-headers">
             <li class="tab-header languages-tab active"><div class="wee"></div><a href="javascript:void(0)">Languages</a></li>
-            <li class="tab-header software-tab"><a href="javascript:void(0)">Software</a></li>
-            <li class="tab-header version-tab"><a href="javascript:void(0)">Additional</a></li>
+            <li class="tab-header software-tab"><a href="javascript:void(0)">Libraries & Frameworks</a></li>
+            <li class="tab-header version-tab"><a href="javascript:void(0)">Version Control</a></li>
           </ul>
 
           <div class="languages tab">
@@ -93,17 +99,7 @@
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>C++</p></div>
-              <div class="level eighty"><p>80%</p></div>
-            </div>
-
-            <div class="skill-box">
               <div class="skill"><p>Java</p></div>
-              <div class="level seventy"><p>70%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>Python</p></div>
               <div class="level sixty"><p>60%</p></div>
             </div>
 
@@ -121,37 +117,27 @@
           <div class="software tab">
             <a href="javascript:void(0)" class="fill"></span></a>
             <div class="skill-box">
-              <div class="skill"><p>MS Office</p></div>
-              <div class="level ninety"><p>90%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>G Suite</p></div>
-              <div class="level ninety"><p>90%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>Visual Studio</p></div>
-              <div class="level seventy"><p>70%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>Atom</p></div>
+              <div class="skill"><p>Bootstrap</p></div>
               <div class="level eighty"><p>80%</p></div>
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>MySQL</p></div>
-              <div class="level seventy"><p>70%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>Git</p></div>
+              <div class="skill"><p>jQuery</p></div>
               <div class="level eighty"><p>80%</p></div>
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>Github</p></div>
+              <div class="skill"><p>Handlebars</p></div>
+              <div class="level seventy"><p>70%</p></div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><p>Less</p></div>
+              <div class="level eighty"><p>80%</p></div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><p>React</p></div>
               <div class="level seventy"><p>70%</p></div>
             </div>
           </div>
@@ -159,33 +145,18 @@
           <div class="version-control tab">
             <a href="javascript:void(0)" class="fill"></a>
             <div class="skill-box">
-              <div class="skill"><p>Windows</p></div>
-              <div class="level ninety"><p>90%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>MacOs</p></div>
-              <div class="level seventy"><p>70%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>iOS</p></div>
-              <div class="level ninety"><p>90%</p></div>
-            </div>
-
-            <div class="skill-box">
-              <div class="skill"><p>Android</p></div>
+              <div class="skill"><p>Git</p></div>
               <div class="level eighty"><p>80%</p></div>
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>Unix</p></div>
-              <div class="level seventy"><p>70%</p></div>
+              <div class="skill"><p>GitHub</p></div>
+              <div class="level eighty"><p>80%</p></div>
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>AWS</p></div>
-              <div class="level fifty"><p>50%</p></div>
+              <div class="skill"><p>Apache SVN</p></div>
+              <div class="level seventy"><p>70%</p></div>
             </div>
           </div>
         </div>
@@ -200,55 +171,59 @@
         <div class="projects-general">
           <ul class="projects">
             <ul class="p-full">
-              <li class="project one"><h1 class="project-title">Personal Portfolio</h1><a href="javascript:void(0)"><img src="images\pj1-tab.jpg"><span class="image-link"></span></a></li>
+              <li class="project zero"><h1 class="project-title">Full Stack Development Intern</h1><a href="javascript:void(0)"><img src="images\pj0-tab.jpg"><span class="image-link"></span></a></li>
             </ul>
             <ul class="p-full">
-              <li class="project two"><h1 class="project-title">Clique Finder</h1><a href="javascript:void(0)"><img src="images\pj2-tab.jpg"><span class="image-link"></span></a></li>
+              <li class="project one"><h1 class="project-title">Pathfinding Visualizer</h1><a href="javascript:void(0)"><img src="images\pj1-tab.jpeg"><span class="image-link"></span></a></li>
             </ul>
             <ul class="p-full">
-              <li class="project three"><h1 class="project-title">Drone Delivery Enhancement</h1><a href="javascript:void(0)"><img src="images\pj3-tab.jpg"><span class="image-link"></span></a></li>
+              <li class="project two"><h1 class="project-title">Sorting Visualizer</h1><a href="javascript:void(0)"><img src="images\pj2-tab.jpg"><span class="image-link"></span></a></li>
             </ul>
             <ul class="p-full">
-              <li class="project four"><h1 class="project-title">Kent Greek Life</h1><a href="javascript:void(0)"><img src="images\pj4-tab.jpg"><span class="image-link"></span></a></li>
+              <li class="project three"><h1 class="project-title">Personal Portfolio</h1><a href="javascript:void(0)"><img src="images\pj3-tab.jpg"><span class="image-link"></span></a></li>
             </ul>
             <ul class="p-full">
-              <li class="project five"><h1 class="project-title">Pong</h1><a href="javascript:void(0)"><img src="images\pj5-tab.jpg"><span class="image-link"></span></a></li>
+              <li class="project four"><h1 class="project-title">Dynamic Webpage</h1><a href="javascript:void(0)"><img src="images\pj4-tab.jpg"><span class="image-link"></span></a></li>
             </ul>
           </ul>
 
+          <div class="project-display project-zero-display">
+            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+            <img src="images\pj0.jpg" alt="Full Stack Development Intern">
+            <h1 class="project-header">Full Stack Development Intern</h1><hr class="break-project">
+            <p class="project-description">During the summer of 2021, I worked remotely as a Full Stack Development Intern for Arizent, a company located in New York.<br><br>During my time at this company, I:<br>- Implemented a design from a UX/UI designer for all web pages displaying a podcast series, by modifying a CMS.<br>- Tested, debugged, and fixed 25+ front and back end issues.<br>- Collaborated with a SCRUM development team to assess and assign tickets on Jira.<br>- Used GitHub to create branches, make pull requests, and resolve issues.</p>
+          </div>
+
           <div class="project-display project-one-display">
             <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-            <img src="images\pj1.jpg" alt="Portfolio">
-            <h1 class="project-header">Personal Portfolio</h1><hr class="break-project">
-            <p class="project-description">This is a fully responsive website designed with HTML, CSS, JavaScript, and jQuery. Every part, section, and illustration on this site was developed and implemented by yours truly.</p>
+            <img src="images\pj1.jpg" alt="Pathfinding Visualizer">
+            <h1 class="project-header">Pathfinding Visualizer</h1><hr class="break-project">
+            <p class="project-description">This project is the result of me trying to find a way to implement and visualize the A* pathfinding algorithm. I did this by generating a grid of div elements and implementing an asynchronous function to traverse the grid while avoiding barrier nodes and weather nodes.</p>
+            <a href="https://github.com/Daniel-Hinz/Pathfinding-Visualizer" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-two-display">
             <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-            <img src="images\pj2.jpg" alt="Clique Finder">
-            <h1 class="project-header">Clique Finder</h1><hr class="break-project">
-            <p class="project-description">Clique Finder was the first web application I ever created by myself. Designed with HTML, CSS, PHP and MySQL, Clique Finder allows the user to search and filter through schools in Ohio based upon entered and filtered Criteria.</p>
+            <img src="images\pj2.jpg" alt="Sorting Visualizer">
+            <h1 class="project-header">Sorting Visualizer</h1><hr class="break-project">
+            <p class="project-description">This project is the result of me trying to better understand various sorting algorithms and the differences in their runtime. In this project, I implement and visualize the bubble, selection, insertion, merge, quick and heap sorting algorithms.</p>
+            <a href="https://github.com/Daniel-Hinz/Sorting-Visualizer" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-three-display">
             <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-            <img src="images\pj3.jpg" alt="Drone Delivery">
-            <h1 class="project-header">Drone Delivery Enhancement</h1><hr class="break-project">
-            <p class="project-description">Presented at the 2021 Choose Ohio First Poster Conference, this C++ program was created with two other students to increase the success rate of delivery drones by implementing a system manager for a fleet of drones. The manager changes each drones delivery queue with respect to entered parameters such as temperature, humidity, and precipition.</p>
+            <img src="images\pj3.jpg" alt="Personal Webpage">
+            <h1 class="project-header">Personal Webpage</h1><hr class="break-project">
+            <p class="project-description">The first webpage I've ever launched and hosted is the one you're currently on! Completing this project taught me more about responsive web design, AWS, and proper HTML structure than any class every could.</p>
+            <a href="https://github.com/Daniel-Hinz/Portfolio" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-four-display">
             <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-            <img src="images\pj4.jpg" alt="Kent State Greek">
-            <h1 class="project-header">Kent Greek Life</h1><hr class="break-project">
-            <p class="project-description">This HTML, CSS, PHP & SQL based web app was designed along with two other students as a part of my Introduction to Database System Design course. It allows for the user to input and search through data regarding Kent State Greek Life in a MySQL Database.</p>
-          </div>
-
-          <div class="project-display project-five-display">
-            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-            <img src="images\pj5.jpg" alt="Pong">
-            <h1 class="project-header">Pong</h1><hr class="break-project">
-            <p class="project-description">Currently, I'm creating a fully responsive website that allows the user to play pong. In addition, I'm adding things such as levels and different difficulties, as well as using cookies to help remember where the user last left off.</p>
+            <img src="images\pj4.jpg" alt="Dynamic Webpage">
+            <h1 class="project-header">Dynamic Webpage</h1><hr class="break-project">
+            <p class="project-description">This was the first full web application I ever designed. With this project, I created a MySQL database storing data regarding every college in Ohio. The web application allows the user to search and filter through the schools stored in the database, and display the results.</p>
+            <a href="https://github.com/Daniel-Hinz/College-Finder" class="visit-site">Learn More</a>
           </div>
         </div>
       </div>
@@ -289,8 +264,8 @@
            </a>
          </div>
          <div class="social">
-             <a href="https://www.linkedin.com/in/danielhinz/" class="fill-div">
-             <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/danielhinz/" class="fill-div">
+              <i class="fa fa-linkedin"></i>
            </a>
          </div>
          <div class="social">

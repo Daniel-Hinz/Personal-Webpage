@@ -3,7 +3,17 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000
 });
 
-// for skills table
+// navbar
+function openMenu() {
+	var x = document.getElementById("links");
+
+	if (x.style.display === "block") 
+	  x.style.display = "none";
+	else 
+	  x.style.display = "block";
+  }
+
+// magic line
 $(document).ready(function() {
   var $thisnav = $('.active').offset().left;
 
@@ -13,10 +23,11 @@ $(document).ready(function() {
     $('.wee').css({ 'left': $left, 'width': $width});
   }, function() {
     var $initwidth = $('.active').width();
-    $('.wee').css({ 'left': $left, 'width': $initwidth });
+    $('.wee').css({ 'left': $left, 'width': $initwidth});
   });
 });
 
+// for skills table
 $(".languages-tab").click(function(){
 	$(".languages").css('display', 'block');
 	$(".software").css('display', 'none');
@@ -49,25 +60,36 @@ $(".version-tab").click(function(){
 
 // exit button on projects display
 $(".fa-times").click(function(){
-	$(".project-display").css('display', 'none');});
+	$(".project-display").css('display', 'none');
+});
 
-// project management
+// open and close projects management
+$(".zero").click(function(){
+	$(".project-display").css('display', 'none');
+	$(".project-zero-display").css('display', 'block');
+  });
+
 $(".one").click(function(){
-  $(".project-one-display").css('display', 'block');
+	$(".project-display").css('display', 'none');
+ 	$(".project-one-display").css('display', 'block');
 });
 
 $(".two").click(function(){
-  $(".project-two-display").css('display', 'block');
+	$(".project-display").css('display', 'none');
+  	$(".project-two-display").css('display', 'block');
 });
 
 $(".three").click(function(){
-  $(".project-three-display").css('display', 'block');
+	$(".project-display").css('display', 'none');
+  	$(".project-three-display").css('display', 'block');
 });
 
 $(".four").click(function(){
-  $(".project-four-display").css('display', 'block');
+	$(".project-display").css('display', 'none');
+ 	$(".project-four-display").css('display', 'block');
 });
 
 $(".five").click(function(){
-  $(".project-five-display").css('display', 'block');
+	$(".project-display").css('display', 'none');
+  	$(".project-five-display").css('display', 'block');
 });
