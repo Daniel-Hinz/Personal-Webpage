@@ -1,17 +1,16 @@
 // smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000
+	speed: 500
 });
 
 // navbar
-function openMenu() {
-	var x = document.getElementById("links");
+// $('.icon').click(function() {
+// 	$("#links").css('transform', 'translateY(210px)');
+// });
 
-	if (x.style.display === "block") 
-	  x.style.display = "none";
-	else 
-	  x.style.display = "block";
-  }
+$(".icon").click(function(){
+	$("#links").toggleClass("move");
+  });
 
 // magic line
 $(document).ready(function() {

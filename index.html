@@ -17,60 +17,61 @@
     <div id="particles-js"></div>
 
     <div class="intro">
-      <h1>Hello,<br>I'm <span class="name">Daniel Hinz</span><br>
-        <div class="wrapper">
-            <a href="#about-landing">Continue</a>
-        </div>
-      </h1>
+      <h1>Hello,<br>I'm <span class="name">Daniel Hinz</span><br></h1>
+      <a href="#about-landing">Continue</a>
     </div>
 
     <nav id="navbar">
-      <div id="links">
-        <a href="#" class="item">Home</a>
-        <a href="#about-landing" class="item">About</a>
-        <a href="#projects-landing" class="item">Projects</a>
-        <a href="#contact-landing" class="item">Contact</a>
-      </div>
       <a href="javascript:void(0);" class="icon" onclick="openMenu()">
         <i class="fas fa-bars"></i>
       </a>
     </nav>
 
-    <div id="about-landing" class="landing"></div>
+    <div id="links">
+      <a href="#" class="item">Home</a>
+      <a href="#about-landing" class="item">About</a>
+      <a href="#projects-landing" class="item">Projects</a>
+      <a href="#contact-landing" class="item">Contact</a>
+    </div>
+
     <div id="about" class="section">
-      <div class="header">
-        <h1>About</h1>
-      </div>
+      <div id="about-landing" class="landing"></div>
 
-      <ul class="certifications">
-        <li class="certification">
-          <div class="hexagon double education"></div>
-          <div class="about-certification">
-            <h2>Education</h2>
-            <p>I am a senior at Kent State. I'm studying Computer Science and have a minor in Web Development.</p>
-          </div>
-        </li>
-        <li class="certification">
-          <div class="hexagon double team"></div>
-          <div class="about-certification">
-            <h2>Collaboration</h2>
-            <p>Groupwork is a strength of mine, I have plenty of experience completing projects with my peers.</p>
-          </div>
-        </li>
-        <li class="certification">
-          <div class="hexagon double hobbies"></div>
-          <div class="about-certification">
-            <h2>Hobbies</h2>
-            <p>When I'm not working on a project, I enjoy being active. Health and fitness are very important to me.</p>
-          </div>
-        </li>
+      <h1>About</h1>
+
+      <ul class="icons">
+        <div class="icon-wrapper">
+          <li>
+            <div><div class="hexagon"><i class="fas fa-rocket"></i></div></div>
+            <h2>Passionate</h2>
+            <p>I have a serious passion for technology and design.</p>
+          </li>
+  
+          <li>
+            <div><div class="hexagon"><i class="fas fa-history"></i></div></div>
+            <h2>Experienced</h2>
+            <p>I have been programming for five years now.</p>
+          </li>
+        </div>
+
+        <div class="icon-wrapper">
+          <li>
+            <div><div class="hexagon"><i class="fas fa-users"></i></div></div>
+            <h2>Collaborative</h2>
+            <p>Communication and teamwork are two of my greatest strengths.</p>
+          </li>
+  
+          <li>
+            <div><div class="hexagon"><i class="fas fa-columns"></i></div></div>
+            <h2>Organized</h2>
+            <p>Time management and organization are both very important to me.</p>
+          </li>
+        </div>
       </ul>
-
-      <hr class="break">
 
       <div class="about-general">
         <div class="about-me">
-          <div class="big hexagon double pic"></div>
+          <div class="big hexagon"></div>
           <p class="caption">I have a passion for technology and enjoy using it to solve everyday problems in simple and efficient ways.</p>
         </div>
 
@@ -155,7 +156,7 @@
             </div>
 
             <div class="skill-box">
-              <div class="skill"><p>Apache SVN</p></div>
+              <div class="skill"><p>Subversion</p></div>
               <div class="level seventy"><p>70%</p></div>
             </div>
           </div>
@@ -163,11 +164,10 @@
       </div>
     </div>
 
-    <div id="projects-landing" class="landing"></div>
       <div id="projects" class="section">
-        <div class="header">
-          <h1>Projects</h1>
-        </div>
+        <div id="projects-landing" class="landing"></div>
+
+        <h1 class="projects-header">Projects</h1>
 
         <div class="projects-general">
           <ul class="projects">
@@ -233,8 +233,9 @@
         <div class="angle"></div>
       </div>
 
-      <div id="contact-landing" class="landing"></div>
       <div id="contact" class="section">
+        <div id="contact-landing" class="landing"></div>
+
         <div class="header">
           <h1>Contact</h1>
         </div>
@@ -243,14 +244,12 @@
           <h2>You can reach me with this.</h2>
         </div>
 
-      <div class="">
         <form action="mailto:dhinz1@kent.edu" method="post" enctype="text/plain">
           <input type="text" class="first" name="name" placeholder="Name"><br>
           <input type="text" class="first" name="mail" placeholder="E-Mail"><br>
           <textarea type="text" class="first message" name="comment" placeholder="Message"></textarea><br>
           <input type="submit" class="first button" placeholder="Submit">
         </form>
-      </div>
     </div>
 
     <div id="footer" class="footer">
