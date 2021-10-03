@@ -67,7 +67,8 @@
   background: var(--dark-blue);
   padding: 25px;
   border-bottom: 3px solid var(--light-blue);
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 999;
 }
 
@@ -88,7 +89,8 @@
   background: var(--med-blue);
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  top: 53px;
   width: 100%;
   z-index: 990;
   transition: .2s;
@@ -131,6 +133,7 @@
   list-style: none;
   margin: auto;
   width: 95%;
+  padding-bottom: 30px;
 }
 
 #about .icons div {
@@ -191,14 +194,12 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding: 50px 0;
 }
 
 .about-skills {
   width: 90%;
   margin: auto;
   max-width: 650px;
-
 }
  
 .about-skills-headers {
@@ -228,6 +229,7 @@
  
 .tab {
   width: 100%;
+  min-height: 250px;
 }
  
 .software {
@@ -257,7 +259,7 @@
  
 .skill {
   width: 20%;
-  background: var(--light-blue);
+  background: var(--dark-blue);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -286,30 +288,29 @@
 }
  
 .ninety {
-  background: linear-gradient(to right, #8296ba 87.5%, #f5f5f5 12.5%);
+  background: linear-gradient(to right, var(--light-blue) 87.5%, #f5f5f5 12.5%);
 }
  
 .eighty {
-  background: linear-gradient(to right, #8296ba 80%, #f5f5f5 12.5%);
+  background: linear-gradient(to right, var(--light-blue) 80%, #f5f5f5 12.5%);
 }
  
 .seventy {
-  background: linear-gradient(to right, #8296ba 70%, #f5f5f5 30%);
+  background: linear-gradient(to right, var(--light-blue) 70%, #f5f5f5 30%);
 }
  
 .sixty {
-  background: linear-gradient(to right, #8296ba 60%, #f5f5f5 40%);
+  background: linear-gradient(to right, var(--light-blue) 60%, #f5f5f5 40%);
 }
  
 .fifty {
-  background: linear-gradient(to right, #8296ba 50%, #f5f5f5 50%);
+  background: linear-gradient(to right, var(--light-blue) 50%, #f5f5f5 50%);
 }
 
 /* projects section */ 
 #projects {
   background: #f5f5f5;
   padding-bottom: 50px;
-  width: 100%;
   position: relative;
 }
 
@@ -324,13 +325,18 @@
 }
  
 .projects {
-  width: 100%;
   list-style: none;
   overflow: hidden;
 }
+
+
+.projects-general {
+  max-width: 1000px;
+  margin: auto;
+}
  
 .project {
-  width: 50%;
+  width: 50vw;
   height: 48vw;
   list-style: none;
   float: left;
@@ -477,7 +483,7 @@
   width: 65%;
   text-align: center;
   margin: auto;
-  max-width: 600px;
+  max-width: 525px;
 }
  
 #contact form input {
@@ -620,8 +626,6 @@
   .icon-wrapper {
     width: 50%;
   }
-
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -630,6 +634,15 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+  }
+
+  .project {
+    height: 333px;
+    width: 333px;
+  }
+
+  .three {
+    transform: translateX(50%);
   }
 
   .about-me {
