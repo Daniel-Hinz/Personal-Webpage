@@ -4,10 +4,6 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 // navbar
-// $('.icon').click(function() {
-// 	$("#links").css('transform', 'translateY(210px)');
-// });
-
 $(".icon").click(function(){
 	$("#links").toggleClass("move");
   });
