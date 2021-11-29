@@ -88,3 +88,8 @@ $(".five").click(function(){
 	$(".project-display").css('display', 'none');
   	$(".project-five-display").css('display', 'block');
 });
+
+$(".six").click(function(){
+	$(".project-display").css('display', 'none');
+  	$(".project-six-display").css('display', 'block');
+});
