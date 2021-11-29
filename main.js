@@ -47,31 +47,30 @@ $(".version-tab").click(function(){
 	$(".languages").css('display', 'none');
 	$(".software").css('display', 'none');
 	$(".version-control").css('display', 'block');
-
 	$(".languages-tab").removeClass('active');
 	$(".software-tab").removeClass('active');
 	$(".version-tab").addClass('active');
 });
 
 // project headers
-$(".all-projects").click(function(){
-	$(".project").css('display', 'block');
+$("#all-projects").click(function(){
 	$(".project-headers-header").removeClass('current');
 	$(this).addClass('current');
+	$(".project").css('display', 'block');
 });
 
-$(".front-end").click(function(){
+$("#front-end").click(function(){
+	$(".project-headers-header").removeClass('current');
+	$(this).addClass('current');
 	$(".project").css('display', 'none');
 	$(".front-end").css('display', 'block');
-	$(".project-headers-header").removeClass('current');
-	$(this).addClass('current');
 });
 
-$(".full-stack").click(function(){
-	$(".project").css('display', 'none');
-	$(".full-stack").css('display', 'block');
+$("#full-stack").click(function(){
 	$(".project-headers-header").removeClass('current');
 	$(this).addClass('current');
+	$(".project").css('display', 'none');
+	$(".full-stack").css('display', 'block');
 });
 
 // exit button on projects display
