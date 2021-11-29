@@ -33,10 +33,10 @@
     </nav>
 
     <div id="links" class="move">
-      <a href="#" class="item">Home</a>
-      <a href="#about-landing" class="item">About</a>
-      <a href="#projects-landing" class="item">Projects</a>
-      <a href="#contact-landing" class="item">Contact</a>
+      <a href="#">Home</a>
+      <a href="#about-landing">About</a>
+      <a href="#projects-landing">Projects</a>
+      <a href="#contact-landing">Contact</a>
     </div>
 
     <div id="about" class="section">
@@ -45,7 +45,6 @@
       <h1>About</h1>
 
       <ul class="icons">
-        <div class="icon-wrapper">
           <li>
             <div><div class="hexagon"><i class="fas fa-rocket"></i></div></div>
             <h2>Passionate</h2>
@@ -57,9 +56,7 @@
             <h2>Experienced</h2>
             <p>I have been programming for five years now.</p>
           </li>
-        </div>
 
-        <div class="icon-wrapper">
           <li>
             <div><div class="hexagon"><i class="fas fa-users"></i></div></div>
             <h2>Collaborative</h2>
@@ -71,7 +68,6 @@
             <h2>Organized</h2>
             <p>Time management and organization are both very important to me.</p>
           </li>
-        </div>
       </ul>
 
       <div class="about-general">
@@ -181,20 +177,20 @@
         <h1 class="projects-header">Projects</h1>
 
         <ul class="project-headers">
-          <li class="all-projects">All Projects</li>
-          <li class="front-end">Front End</li>
-          <li class="full-stack">Full Stack</li>
+          <li class="project-headers-header all-projects current">All Projects</li>
+          <li class="project-headers-header front-end">Front-End</li>
+          <li class="project-headers-header full-stack">Full-Stack</li>
         </ul>
 
         <div class="projects-general">
           <ul class="projects">
-            <li class="project zero"><h1 class="project-title">Podcast Series</h1><a href="javascript:void(0)"><img src="images\pj0-tab.jpg"><span class="image-link"></span></a></li>
-            <li class="project one"><h1 class="project-title">Autonomous Interpreter</h1><a href="javascript:void(0)"><img src="images\pj1-tab.jpg"><span class="image-link"></span></a></li>
-            <li class="project two"><h1 class="project-title">Secure Database</h1><a href="javascript:void(0)"><img src="images\pj2-tab.jpg"><span class="image-link"></span></a></li>
-            <li class="project three"><h1 class="project-title">Pathfinding Visualizer</h1><a href="javascript:void(0)"><img src="images\pj3-tab.jpeg"><span class="image-link"></span></a></li>
-            <li class="project four"><h1 class="project-title">Sorting Visualizer</h1><a href="javascript:void(0)"><img src="images\pj4-tab.jpg"><span class="image-link"></span></a></li>
-            <li class="project five"><h1 class="project-title">Personal Portfolio</h1><a href="javascript:void(0)"><img src="images\pj5-tab.jpg"><span class="image-link"></span></a></li>
-            <li class="project six"><h1 class="project-title">Dynamic Webpage</h1><a href="javascript:void(0)"><img src="images\pj6-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project zero full-stack"><h1 class="project-title">Podcast Series</h1><a href="javascript:void(0)"><img src="images\pj0-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project one full-stack"><h1 class="project-title">Autonomous Interpreter</h1><a href="javascript:void(0)"><img src="images\pj1-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project two full-stack"><h1 class="project-title">Secure Database</h1><a href="javascript:void(0)"><img src="images\pj2-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project three front-end"><h1 class="project-title">Pathfinding Visualizer</h1><a href="javascript:void(0)"><img src="images\pj3-tab.jpeg"><span class="image-link"></span></a></li>
+            <li class="project four front-end"><h1 class="project-title">Sorting Visualizer</h1><a href="javascript:void(0)"><img src="images\pj4-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project five front-end"><h1 class="project-title">Personal Portfolio</h1><a href="javascript:void(0)"><img src="images\pj5-tab.jpg"><span class="image-link"></span></a></li>
+            <li class="project six full-stack"><h1 class="project-title">Dynamic Webpage</h1><a href="javascript:void(0)"><img src="images\pj6-tab.jpg"><span class="image-link"></span></a></li>
           </ul>
 
           <div class="project-display project-zero-display">
@@ -202,6 +198,7 @@
             <img src="images\pj0.JPG" alt="Podcast Series Lead">
             <h1 class="project-header">Podcast Series</h1><hr class="break-project">
             <p class="project-description">During the summer of 2021, I worked as a Software Engineering Intern for Arizent, a publishing company located in New York. In addition to adding back-end functionality for a CMS, I implemented a new design from a UX/UI designer for all webpages that display a podcast series.</p>
+            <a href=" https://github.com/MatthewSherlin/Capstone-2021" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-one-display">
@@ -209,6 +206,7 @@
             <img src="images\pj1.JPG" alt="Autonomous Interpreter">
             <h1 class="project-header">Autonomous Interpreter</h1><hr class="break-project">
             <p class="project-description">For my senior project, I worked with five other students to implement an autonomous language interpreter. With this projiect, we built a full-stack website that translates and displays both text and speech into the desired language of the user.</p>
+            <a href="https://github.com/Daniel-Hinz/Database-Security-Model" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-two-display">
@@ -216,6 +214,7 @@
             <img src="images\pj2.JPG" alt="Secure Database">
             <h1 class="project-header">Secure Database</h1><hr class="break-project">
             <p class="project-description">As a part of my Data Security class, I created a full stack website that stores user entered data in an SQLite3 database. The website allows the user to signup, login, and see the differences in the database after password hashing and salting and data anonymization.</p>
+            <a href="https://github.com/Daniel-Hinz/Database-Security-Model" class="visit-site">Learn More</a>
           </div>
 
           <div class="project-display project-three-display">

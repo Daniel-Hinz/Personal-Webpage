@@ -137,28 +137,26 @@
 #about .icons {
   list-style: none;
   margin: auto;
-  width: 95%;
+  width: 85%;
   padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-#about .icons div {
+#about .icons li {
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-#about .icons div li {
-  width: 50%;
-  padding: 10px;
-}
-
-#about .icons div li h2 {
+#about .icons li h2 {
   font-size: 15px;
 }
 
-#about .icons div li p {
+#about .icons li p {
   font-size: 12px;
 }
 
@@ -255,7 +253,7 @@
   bottom: 0;
   transition: 0.75s;
 }
- 
+
 .skill-box {
   display: flex;
   margin: 1.5% 0;
@@ -417,11 +415,26 @@
   align-items: center;
   list-style: none;
   gap: 30px;
-  margin-bottom: 40px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.project-headers-header {
+  transition: .2s;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .project-headers li {
+  cursor: pointer;
+}
 
+.current {
+  background: var(--med-blue);
+  color: white;
 }
  
 .project-display img {
@@ -451,10 +464,6 @@
   color: #fff;
   background: #2b2d36;
   font-size: 0.75rem;
-}
-
-.six {
-  transform: translateX(50%);
 }
 
 .page-break {
@@ -636,13 +645,8 @@
 
 /* make responsive */ 
 @media screen and (min-width: 768px) {
-  .icons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .icon-wrapper {
-    width: 50%;
+  #about .icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .projects {
@@ -651,13 +655,13 @@
     margin: auto;
   }
 
+  .project-headers {
+    gap: 60px;
+  }
+
   .project {
     width: 333px;
     height: 333px;
-  }
-
-  .six {
-    transform: translateX(100%);
   }
 
   .project-display {

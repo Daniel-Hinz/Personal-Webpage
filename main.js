@@ -8,7 +8,7 @@ $(".icon").click(function(){
 	$("#links").toggleClass("move");
   });
 
-// magic line
+// about headers magic line
 $(document).ready(function() {
   var $thisnav = $('.active').offset().left;
 
@@ -51,6 +51,27 @@ $(".version-tab").click(function(){
 	$(".languages-tab").removeClass('active');
 	$(".software-tab").removeClass('active');
 	$(".version-tab").addClass('active');
+});
+
+// project headers
+$(".all-projects").click(function(){
+	$(".project").css('display', 'block');
+	$(".project-headers-header").removeClass('current');
+	$(this).addClass('current');
+});
+
+$(".front-end").click(function(){
+	$(".project").css('display', 'none');
+	$(".front-end").css('display', 'block');
+	$(".project-headers-header").removeClass('current');
+	$(this).addClass('current');
+});
+
+$(".full-stack").click(function(){
+	$(".project").css('display', 'none');
+	$(".full-stack").css('display', 'block');
+	$(".project-headers-header").removeClass('current');
+	$(this).addClass('current');
 });
 
 // exit button on projects display
