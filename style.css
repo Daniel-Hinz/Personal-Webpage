@@ -325,7 +325,7 @@
   width: 85%;
   max-width: 400px;
   margin: auto;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .date {
@@ -334,7 +334,7 @@
 
 .date-break {
   width: 3px;
-  height: 100px;
+  height: 85px;
   background: var(--med-blue);
   border-radius: 50px;
 }
@@ -352,6 +352,7 @@
   height: 75px;
   width: 75px;
   outline: 1px solid var(--med-blue);
+  cursor: pointer;
 }
 
 .job-term {
@@ -364,6 +365,35 @@
   width: 20px;
   height: 1px;
   background: var(--med-blue);
+}
+
+.job-info {
+  width: 250px;
+  padding: 10px;
+  background: white;
+  border: 1px solid var(--med-blue);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+}
+
+.job-info-tab {
+  position: absolute;
+  background: white;
+  border-left: 1px solid var(--med-blue);
+  border-top: 1px solid var(--med-blue);
+  height: 20px;
+  width: 20px;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.show-job {
+  display: block;
 }
 
 /* projects section */ 
