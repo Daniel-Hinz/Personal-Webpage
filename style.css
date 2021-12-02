@@ -330,10 +330,14 @@
 
 .date {
   color:var(--med-blue);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .date-break {
-  width: 3px;
+  width: 1px;
   height: 85px;
   background: var(--med-blue);
   border-radius: 50px;
