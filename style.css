@@ -337,7 +337,7 @@
 }
 
 .date-break {
-  width: 1px;
+  width: 1.5px;
   height: 85px;
   background: var(--med-blue);
   border-radius: 50px;
