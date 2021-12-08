@@ -49,14 +49,14 @@
   color: white;
   text-decoration: none;
   border: 2px solid white;
-  padding: 10px 40px;
+  padding: 10px 30px;
   font-size: 15px;
   transition: .2s;
 }
 
 .intro a:hover {
   color: var(--light-blue);
-  padding: 10px 35px;
+  padding: 10px 27.5px;
   border: 2px solid var(--light-blue);
 }
 
@@ -568,14 +568,8 @@
 /* Contact Section */
 #contact {
   background: #2b2d36;
-  padding-bottom: 10rem;
   width: 100%;
   position: relative;
-}
-
-#contact-landing {
-  position: absolute;
-  top: -53px;
 }
  
 #contact h1 {
@@ -736,6 +730,15 @@
 @media screen and (min-width: 870px) {
   #about .icons {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 0;
+  }
+
+  #about .about-me {
+    width: 300px;
+  }
+
+  #about .about-skills {
+    width: 500px;
   }
 
   .projects {
@@ -790,7 +793,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
   }
 
   .about-me {
@@ -799,5 +801,6 @@
 
   .about-skills {
     padding-bottom: 100px;
+    padding-top: 50px;
   }
 }
