@@ -13,6 +13,7 @@
   font-family: Open Sans;
   font-weight: 400;
   color: var(--med-blue);
+  box-sizing: border-box;
 }
 
 /* landing page */
@@ -315,87 +316,72 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
+  padding: 0 15px;
+  padding-bottom: 75px;
 }
 
 #experience h2 {
   text-align: center;
-  width: 85%;
-  max-width: 400px;
+  padding-bottom: 30px;
+}
+
+.timeline-items {
+  max-width: 1000px;
   margin: auto;
-  padding-bottom: 50px;
-}
-
-.date {
-  color:var(--med-blue);
-  height: 85px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.date-break {
-  width: 1.5px;
-  height: 85px;
-  background: var(--med-blue);
-  border-radius: 50px;
-}
-
-.jobs {
-  width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  align-items: center;
-  justify-items: center;
-}
-
-.jobs img {
-  height: 75px;
-  width: 75px;
-  outline: 1px solid var(--med-blue);
-  cursor: pointer;
-}
-
-.job-term {
-  width: 1.5px;
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
   height: 100%;
-  background: var(--med-blue);
+  background-color: var(--med-blue);
+  left: 7px;
 }
 
-.job-term-break {
-  width: 20px;
-  height: 1px;
-  background: var(--med-blue);
+.timeline-item:last-child{
+  margin-bottom: 0;
 }
 
-.job-info {
-  width: 250px;
-  padding: 10px;
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 2px solid var(--med-blue);
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.timeline-date {
+  font-size: 16px;
+  margin: 6px 0 15px 0 ;
+}
+
+.timeline-content {
   background: white;
-  border: 1px solid var(--med-blue);
+  padding: 30px;
   border-radius: 5px;
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 900;
 }
 
-.job-info-tab {
-  position: absolute;
-  background: white;
-  border-left: 1px solid var(--med-blue);
-  border-top: 1px solid var(--med-blue);
-  height: 20px;
-  width: 20px;
-  top: -11px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
+.timeline-img {
+  height: 60px;
 }
 
-.show-job {
-  display: block;
+.timeline-content p {
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 /* projects section */ 
@@ -739,6 +725,10 @@
 
   #about .about-skills {
     width: 500px;
+  }
+
+  .timeline-content p {
+    font-size: 15px;
   }
 
   .projects {

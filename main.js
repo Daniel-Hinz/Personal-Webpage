@@ -52,23 +52,6 @@ $(".version-tab").click(function(){
 	$(".version-tab").addClass('active');
 });
 
-/* for projects section */
-$(".jersey-mikes").click(function(){
-	$(".jersey-mikes-job").toggleClass("show-job");
-});
-
-$(".cof").click(function(){
-	$(".cof-job").toggleClass("show-job");
-});
-
-$(".arizent").click(function(){
-	$(".arizent-job").toggleClass("show-job");
-});
-
-$(".cinfin").click(function(){
-	$(".cinfin-job").toggleClass("show-job");
-});
-
 // project headers
 $("#all-projects").click(function(){
 	$(".project-headers-header").removeClass('current');
