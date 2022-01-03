@@ -537,6 +537,7 @@
   color: #fff;
   background: #2b2d36;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .page-break {
