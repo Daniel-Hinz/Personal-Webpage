@@ -3,23 +3,20 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 500
 });
 
-// fix navbar for mobile
-window.setInterval(checknav, 25);
-
-function checknav() {
-	let navbar = document.getElementById('navbar');
+// fix mobile navbar
+window.onscroll = () => {
 	let links  = document.getElementById('links');
-	let distance = '0';
 
-	if (navbar.offsetTop <= 812 && !links.classList.contains('move')) {
+	if (document.body.scrollTop <= 812 && !links.classList.contains('move')) {
 		distance = ($('#navbar').offset().top - $(window).scrollTop()) + 52;
-		links.style.transition = '0s';
 		links.style.top = distance + 'px';
-	} else if (navbar.offsetTop > 812 && !links.classList.contains('move')) {
-		links.style.transition = '.2s';
+		links.style.transition = '0s';
+	} else if (document.body.scrollTop > 812 && !links.classList.contains('move')) {
 		links.style.top = '52px';
-	}
-}
+		links.style.transition = '.2s';
+	} 
+};
+
 
 // navbar
 $(".icon").click(function(){
