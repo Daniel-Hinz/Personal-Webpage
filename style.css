@@ -233,7 +233,7 @@
  
 .tab {
   width: 100%;
-  min-height: 250px;
+  min-height: 275px;
 }
  
 .software {
@@ -252,7 +252,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  transition: 0.75s;
+  transition: 0.5s;
 }
 
 .skill-box {
@@ -519,12 +519,12 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0 1.5rem 1rem 1.5rem;
-  gap: 10px;
+  gap: 15px;
   position: relative;
 }
 
 .view-project i {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .close-project {
@@ -706,44 +706,6 @@
 }
 
 /* make responsive */ 
-@media screen and (min-width: 870px) {
-  #about .icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-bottom: 0;
-  }
-
-  #about .about-me {
-    width: 300px;
-  }
-
-  #about .about-skills {
-    width: 500px;
-  }
-
-  .timeline-content p {
-    font-size: 15px;
-  }
-
-  .projects {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 870px;
-    margin: auto;
-  }
-
-  .project-headers {
-    gap: 60px;
-  }
-
-  .project {
-    width: 290px;
-    height: 290px;
-  }
-
-  .project-display {
-    min-width: 50%;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   #navbar {
     display: flex;
@@ -778,12 +740,42 @@
     align-items: center;
   }
 
-  .about-me {
+  #about .icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 0;
+  }
+
+  #about .about-me {
+    width: 300px;
     padding: 0;
   }
 
-  .about-skills {
+  #about .about-skills {
+    width: 500px;
     padding-bottom: 100px;
     padding-top: 50px;
+  }
+
+  .timeline-content p {
+    font-size: 15px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 870px;
+    margin: auto;
+  }
+
+  .project-headers {
+    gap: 60px;
+  }
+
+  .project {
+    width: 290px;
+    height: 290px;
+  }
+
+  .project-display {
+    min-width: 50%;
   }
 }
