@@ -525,6 +525,11 @@
 
 .view-project i {
   font-size: 1.6rem;
+  transition: .2s;
+}
+
+.view-project i:hover {
+  transform: translateY(-2.5px);
 }
 
 .close-project {
