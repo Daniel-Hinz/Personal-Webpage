@@ -10,10 +10,8 @@ window.onscroll = () => {
 	if (document.body.scrollTop <= 812 && !links.classList.contains('move')) {
 		distance = ($('#navbar').offset().top - $(window).scrollTop()) + 52;
 		links.style.top = distance + 'px';
-		links.style.transition = '0s';
 	} else if (document.body.scrollTop > 812 && !links.classList.contains('move')) {
 		links.style.top = '52px';
-		links.style.transition = '.2s';
 	} 
 };
 
