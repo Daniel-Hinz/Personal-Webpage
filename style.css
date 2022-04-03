@@ -220,11 +220,7 @@
   padding: 22.5px 0;
   font-size: 1rem;
   list-style-type: none;
-}
-
-.tab-header a {
-  text-decoration: none;
-  color: #25252e;
+  cursor: pointer;
 }
 
 .languages-tab {
@@ -255,40 +251,26 @@
   transition: 0.5s;
 }
 
-.skill-box {
-  display: flex;
-  margin: 1.5% 0;
-  height: 30px;
-}
-
-.skill {
+.skill::before {
+  content: attr(skill);
   width: 20%;
+  height: 30px;
   background: var(--dark-blue);
-  color: #fff;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  font-size: 11px;
 }
 
-.skill p {
-  color: white;
-  font-size: 10px;
-}
-
-.level {
-  width: 80%;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.skill {
+  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-}
-
-.level p {
-  color: #92a8d1;
-  padding-right: 1px;
+  margin: 1.5% 0;
+  border-radius: 5px;
 }
 
 .hundred {
@@ -456,6 +438,7 @@
 .project:hover img {
   transition: 0.4s;
   opacity: 0.2;
+  cursor: pointer;
 }
 
 .project img {
@@ -542,7 +525,7 @@
   transition: 0.2s;
 }
 
-.view-project i:hover {
+.view-project a i:hover {
   transform: translateY(-2.5px);
 }
 
