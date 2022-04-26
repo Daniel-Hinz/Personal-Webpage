@@ -88,84 +88,91 @@ $(".fa-times").click(function () {
   switch (element) {
     case 0:
       const modal = document.querySelector(".project-zero-display");
+      modal.removeAttribute("open");
       modal.setAttribute("closing", "");
       modal.addEventListener(
         "animationend",
         () => {
           modal.removeAttribute("closing");
-          modal.close();
+          modal.style.display = "none";
         },
         { once: true }
       );
       break;
     case 1:
       const modalOne = document.querySelector(".project-one-display");
+      modalOne.removeAttribute("open");
       modalOne.setAttribute("closing", "");
       modalOne.addEventListener(
         "animationend",
         () => {
           modalOne.removeAttribute("closing");
-          modalOne.close();
+          modalOne.style.display = "none";
         },
         { once: true }
       );
       break;
     case 2:
       const modalTwo = document.querySelector(".project-two-display");
+      modalTwo.removeAttribute("open");
       modalTwo.setAttribute("closing", "");
       modalTwo.addEventListener(
         "animationend",
         () => {
           modalTwo.removeAttribute("closing");
-          modalTwo.close();
+          modalTwo.style.display = "none";
         },
         { once: true }
       );
       break;
     case 3:
       const modalThree = document.querySelector(".project-three-display");
+      modalThree.removeAttribute("open");
       modalThree.setAttribute("closing", "");
       modalThree.addEventListener(
         "animationend",
         () => {
           modalThree.removeAttribute("closing");
-          modalThree.close();
+          modalThree.style.display = "none";
         },
         { once: true }
       );
       break;
     case 4:
       const modalFour = document.querySelector(".project-four-display");
+      modalFour.removeAttribute("open");
       modalFour.setAttribute("closing", "");
       modalFour.addEventListener(
         "animationend",
         () => {
           modalFour.removeAttribute("closing");
-          modalFour.close();
+          modalFour.style.display = "none";
         },
         { once: true }
       );
       break;
     case 5:
       const modalFive = document.querySelector(".project-five-display");
+      modalFive.removeAttribute("open");
       modalFive.setAttribute("closing", "");
       modalFive.addEventListener(
         "animationend",
         () => {
           modalFive.removeAttribute("closing");
-          modalFive.close();
+          modalFive.style.display = "none";
         },
         { once: true }
       );
       break;
     case 6:
       const modalSix = document.querySelector(".project-six-display");
+      modalSix.removeAttribute("open");
       modalSix.setAttribute("closing", "");
       modalSix.addEventListener(
         "animationend",
         () => {
           modalSix.removeAttribute("closing");
-          modalSix.close();
+          modalSix.style.display = "none";
         },
         { once: true }
       );
@@ -175,36 +182,50 @@ $(".fa-times").click(function () {
 
 // open and close projects management
 $(".zero").click(function () {
-  document.querySelector(".project-zero-display").showModal();
+  const modal = document.querySelector(".project-zero-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 0;
 });
 
 $(".one").click(function () {
-  document.querySelector(".project-one-display").showModal();
+  const modal = document.querySelector(".project-one-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 1;
 });
 
 $(".two").click(function () {
-  document.querySelector(".project-two-display").showModal();
+  const modal = document.querySelector(".project-two-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 2;
 });
 
 $(".three").click(function () {
-  document.querySelector(".project-three-display").showModal();
+  const modal = document.querySelector(".project-three-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 3;
 });
 
 $(".four").click(function () {
-  document.querySelector(".project-four-display").showModal();
+  const modal = document.querySelector(".project-four-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 4;
 });
 
 $(".five").click(function () {
-  document.querySelector(".project-five-display").showModal();
+  const modal = document.querySelector(".project-five-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 5;
 });
 
 $(".six").click(function () {
-  document.querySelector(".project-six-display").showModal();
+  const modal = document.querySelector(".project-six-display");
+  modal.setAttribute("open", "");
+  modal.style.display = "block";
   element = 6;
 });

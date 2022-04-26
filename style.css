@@ -453,7 +453,7 @@
 }
 
 .project-display {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   width: 90%;
   max-width: 900px;
@@ -463,14 +463,11 @@
   outline: 0;
   transform: translate(-50%, -50%);
   border: 0;
+  display: none;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
-.project-display::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-}
-
-.project-display[open]::backdrop {
+.project-display[open] {
   animation: fadeIn .4s forwards;
 }
 
@@ -792,13 +789,13 @@
 @keyframes contentFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
-    visibility: hidden;
+    transform: translateY(-200px);
+    visibility: visible;
   }
 
   50% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateY(-200px);
     visibility: visible;
   }
 
