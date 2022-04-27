@@ -468,23 +468,24 @@
 }
 
 .project-display[open] {
-  animation: fadeIn .4s forwards;
+  animation: fadeIn .75s forwards;
 }
 
 .project-display[open] > * {
   visibility: hidden;
-  animation: contentFadeIn .8s forwards; 
+  animation: contentFadeIn .75s forwards; 
   background: #f5f5f5;
 }
 
 .project-display[closing] {
   display: block;
   pointer-events: none;
-  animation: fadeOut .3s forwards;
+  animation: fadeOut .75s forwards;
 }
 
-.project-display[closing]::backdrop {
-  animation: fadeOut .3s forwards;
+.project-display[closing] > * {
+  animation: contentFadeOut .75s forwards; 
+  background: #f5f5f5;
 }
 
 .project-header {
@@ -789,19 +790,27 @@
 @keyframes contentFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-200px);
-    visibility: visible;
-  }
-
-  50% {
-    opacity: 0;
-    transform: translateY(-200px);
+    transform: translateY(-150px);
     visibility: visible;
   }
 
   100% {
     opacity: 1;
     transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+@keyframes contentFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(150px);
     visibility: visible;
   }
 }
