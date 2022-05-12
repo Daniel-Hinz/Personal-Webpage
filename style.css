@@ -422,11 +422,11 @@
 }
 
 .project[opening] {
-  animation: openProject .5s forwards;
+  /* animation: openProject .5s forwards; */
 }
 
 .project[closing] {
-  animation: closeProject .5s forwards;
+  /* animation: closeProject .5s forwards; */
 }
 
 .project-title {

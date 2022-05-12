@@ -70,23 +70,7 @@ projectHeaders.forEach((header) => {
       if ([...project.classList].includes(header.id)) {
         if (project.style.display === "block") return;
         project.style.display = "block";
-        project.setAttribute("opening", "");
-        project.addEventListener(
-          "animationend",
-          () => project.removeAttribute("opening"),
-          { once: true }
-        );
-      } else {
-        project.setAttribute("closing", "");
-        project.addEventListener(
-          "animationend",
-          () => {
-            project.removeAttribute("closing");
-            project.style.display = "none";
-          },
-          { once: true }
-        );
-      }
+      } else project.style.display = "none";
     });
   });
 });
