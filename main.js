@@ -80,7 +80,7 @@ allProjects.forEach((project, index) => {
   project.addEventListener("click", () => {
     projectDisplays.forEach((projectDisplay) => {
       projectDisplay.removeAttribute("open");
-      projectDisplays[element].style.display = "none";
+      projectDisplay.style.display = "none";
     });
     projectDisplays[index].setAttribute("open", "");
     projectDisplays[index].style.display = "block";
