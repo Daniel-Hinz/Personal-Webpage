@@ -181,7 +181,7 @@
   height: 275px;
   width: 300px;
   margin-bottom: 40px;
-  background-image: url(images/composite.PNG);
+  background-image: url(images/headshot.jpg);
   background-position: cover;
   background-size: 100%;
 }
@@ -479,23 +479,23 @@
 }
 
 .project-display[open] {
-  animation: fadeIn .75s forwards;
+  animation: fadeIn 0.75s forwards;
 }
 
 .project-display[open] > * {
   visibility: hidden;
-  animation: contentFadeIn .5s forwards; 
+  animation: contentFadeIn 0.5s forwards;
   background: #f5f5f5;
 }
 
 .project-display[closing] {
   display: block;
   pointer-events: none;
-  animation: fadeOut .75s forwards;
+  animation: fadeOut 0.75s forwards;
 }
 
 .project-display[closing] > * {
-  animation: contentFadeOut .5s forwards; 
+  animation: contentFadeOut 0.5s forwards;
   background: #f5f5f5;
 }
 
